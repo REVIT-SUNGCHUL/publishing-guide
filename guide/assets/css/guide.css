@@ -301,8 +301,15 @@ option[value=""][disabled] {display:none;}
 /*****************************************************************
   Guide
 *****************************************************************/
-.g-contents .preview {margin-top:30px;}
-.g-contents .code {border:1px solid #ddd; border-radius:.6rem;}
-.g-contents .code .code-head {display: flex; align-items: center; justify-content: space-between; padding:.5rem 1rem;}
-.g-contents .code .code-head span {font-size:1.6rem; font-weight: 500; line-height:2.2rem;}
+.g-contents .preview {margin-top:2rem;}
+.g-contents .code {margin-top:2rem; border:1px solid #ddd; border-radius:.6rem;}
+.g-contents .code .code-head {display: flex; align-items: center; justify-content: space-between; padding:.5rem 2rem;}
+.g-contents .code .code-head span {font-size:1.6rem; font-weight: 500; line-height:3rem;}
+.g-contents .code .code-head .aside {display: flex; align-items: center; gap:2rem;}
+.g-contents .code .code-head .aside button {position:relative; padding-right:3rem; font-size:1.4rem; line-height:3rem;}
+.g-contents .code .code-head .copy-btn:after {content: ''; position: absolute; top:50%; right:0; width:2.4rem; height:2.4rem; margin-top:-1.2rem; background: url(/guide/assets/images/ico-clip.png) no-repeat center center/2rem; transform:rotate(0);}
+.g-contents .code .code-head .btn-toggle:after {content: ''; position: absolute; top:50%; right:0; width:2.4rem; height:2.4rem; margin-top:-1.2rem; background: url(/guide/assets/images/arrow-24x24.png) no-repeat 0 0/2.4rem; transform:rotate(0);}
+.g-contents .code .code-head .btn-toggle.on:after {transform: rotate(180deg);}
 .g-contents .code pre[class*=language-] {margin:0;}
+.g-contents .code .code-toolbar {display: none;}
+.g-contents .code .code-toolbar.on {display: block;}
