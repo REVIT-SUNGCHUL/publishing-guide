@@ -302,3 +302,7 @@ option[value=""][disabled] {display:none;}
   Guide
 *****************************************************************/
 .g-contents .preview {margin-top:30px;}
+.g-contents .code {border:1px solid #ddd; border-radius:.6rem;}
+.g-contents .code .code-head {display: flex; align-items: center; justify-content: space-between; padding:.5rem 1rem;}
+.g-contents .code .code-head span {font-size:1.6rem; font-weight: 500; line-height:2.2rem;}
+.g-contents .code pre[class*=language-] {margin:0;}

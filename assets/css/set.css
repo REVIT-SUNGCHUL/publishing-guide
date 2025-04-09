@@ -1,41 +1,41 @@
 /* font */
 @font-face {
 	font-family:'Spoqa';font-style:normal;font-weight:400;
-	src:url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
-    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Regular.woff') format('woff'),
-    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+	src:url('/assets/font/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
+    url('/assets/font/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('/assets/font/SpoqaHanSansNeo-Regular.woff2') format('woff2');
     unicode-range: U+0030-0039, U+002C;
 }
 @font-face {
 	font-family:'Spoqa';font-style:normal;font-weight:500;
-	src:url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype'),
-    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Medium.woff') format('woff'),
-    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2');
+	src:url('/assets/font/SpoqaHanSansNeo-Medium.ttf') format('truetype'),
+    url('/assets/font/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('/assets/font/SpoqaHanSansNeo-Medium.woff2') format('woff2');
     unicode-range: U+0030-0039, U+002C;
 }
 @font-face {
 	font-family:'Pretendard';
     font-weight:400;
     font-display: swap;
-	src:url('/_pub/SBP/assets/css/fonts/Pretendard-Regular.otf') format('opentype'),
-    url('/_pub/SBP/assets/css/fonts/Pretendard-Regular.woff') format('woff'),
-    url('/_pub/SBP/assets/css/fonts/Pretendard-Regular.woff2') format('woff2');
+	src:url('/assets/font/Pretendard-Regular.otf') format('opentype'),
+    url('/assets/font/Pretendard-Regular.woff') format('woff'),
+    url('/assets/font/Pretendard-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family:'Pretendard';
     font-weight:500;
     font-display: swap;
-	src:url('/_pub/SBP/assets/css/fonts/Pretendard-Medium.otf') format('opentype'),
-    url('/_pub/SBP/assets/css/fonts/Pretendard-Medium.woff') format('woff'),
-    url('/_pub/SBP/assets/css/fonts/Pretendard-Medium.woff2') format('woff2');
+	src:url('/assets/font/Pretendard-Medium.otf') format('opentype'),
+    url('/assets/font/Pretendard-Medium.woff') format('woff'),
+    url('/assets/font/Pretendard-Medium.woff2') format('woff2');
 }
 @font-face {
 	font-family:'Pretendard';
     font-weight:600;
     font-display: swap;
-	src:url('/_pub/SBP/assets/css/fonts/Pretendard-SemiBold.otf') format('opentype'),
-    url('/_pub/SBP/assets/css/fonts/Pretendard-SemiBold.woff') format('woff'),
-    url('/_pub/SBP/assets/css/fonts/Pretendard-SemiBold.woff2') format('woff2');
+	src:url('/assets/font/Pretendard-SemiBold.otf') format('opentype'),
+    url('/assets/font/Pretendard-SemiBold.woff') format('woff'),
+    url('/assets/font/Pretendard-SemiBold.woff2') format('woff2');
 }
 
 
