@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="title" content="REVIT">
+<script src="/guide/assets/vendor/swiper-bundle.js"></script>
+<script src="/guide/assets/vendor/prism.js"></script>
+<script src="/guide/assets/js/worksheet.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/guide/assets/css/guide.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="/guide/assets/vendor/swiper-bundle.css">
+<link rel="stylesheet" type="text/css" href="/guide/assets/vendor/prism.css">
+
+<!-- <link rel="shortcut icon" type="image/x-icon" href="/guide/assets/images/favicon.ico"> 
+<script src="/guide/assets/vendor/jquery.min.js"></script>
+ -->
+<title>Worksheet | Publishing Guide</title>
+
+</head>
+<body data-project="PC" data-util="guide">
+	<div class="guide" data-category="guide">
+		<div id="gHeader">
+			<h1>REVIT</h1>
+			<div class="util-area">
+				<div class="tab-wrap">
+					<button type="button" class="btn-menu" role="button" aria-label="메뉴" aria-expanded="false">
+						<span class="bar" aria-hidden="true"></span>
+						<span class="bar" aria-hidden="true"></span>
+						<span class="bar" aria-hidden="true"></span>
+					</button>
+
+					<ul class="tab-list">
+						<li class="item"><a href="worksheet.html" role="tab" aria-selected="false">Web</a></li>
+						<li class="item active"><a href="#none" role="tab" aria-selected="false">Guide</a></li>
+						<li class="item"><a href="document.html" role="tab" aria-selected="true">Doc</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="gContainer">
+			<div class="status-area">
+				<h2>Document</h2>
+			</div>
+			<div class="g-contents type02">
+				<div class="nav">
+					<div class="nav-list">
+						<ul>
+							<li class="on"><a href="#guide1">Layout</a></li>
+							<li><a href="#guide2">Title</a></li>
+							<li><a href="#guide3">Text</a></li>
+							<li><a href="#guide4">Button</a></li>
+							<li><a href="#guide5">Table</a></li>
+							<li><a href="#guide6">Form</a></li>
+							<li><a href="#guide7">Paging</a></li>
+							<li><a href="#guide8">List</a></li>
+							<li><a href="#guide9">Tab</a></li>
+							<li><a href="#guide10">Accordion</a></li>
+							<li><a href="#guide11">Slide</a></li>
+							<li><a href="#guide12">Tooltip</a></li>
+							<li><a href="#guide13">Popup</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="guide1" class="section">
+					<h3>Layout</h3>
+
+					<div class="preview">
+						<div id="skip">
+							<h2 class="hidden">바로가기</h2>
+							<a href="#header">상단 영역 바로가기</a>
+							<a href="#content">본문 영역 바로가기</a>
+							<a href="#footer">하단 영역 바로가기</a>
+						</div>
+						<div id="header">
+							<div class="header-inner"></div>
+						</div>
+						<div id="container">
+							<div id="content">
+
+							</div>
+						</div>
+						<div id="footer">
+							<div class="footer-inner">
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="guide2" class="section">
+					<h3>Title</h3>
+					<div class="preview">
+						<div class="title-group">
+							<div class="flex flex-col">
+								<h2 class="page-tit">페이지 타이틀</h2>
+								<span class="sub-text">sub-text</span>
+							</div>
+							<div class="aside">
+								<button type="button" class="btn btn-sm" role="button" aria-label="버튼">버튼</button>
+								<a href="javascript:;" class="btn btn-sm" role="button" aria-label="버튼">버튼</a>
+							</div>
+						</div>
+						<div class="title-group">
+							<div class="flex flex-col">
+								<h3 class="tit-m">타이틀 fs:20px lh:26px</h3>
+								<span class="sub-text">sub-text</span>
+							</div>
+							<div class="aside">
+								<button type="button" class="btn btn-sm" role="button" aria-label="버튼">버튼</button>
+								<a href="javascript:;" class="btn btn-sm" role="button" aria-label="버튼">버튼</a>
+							</div>
+						</div>
+						<div class="title-group">
+							<div class="flex flex-col">
+								<h4 class="tit-s">타이틀 fs:18px lh:24px</h4>
+								<span class="sub-text">sub-text</span>
+							</div>
+							<div class="aside">
+								<button type="button" class="btn btn-sm" role="button" aria-label="버튼">버튼</button>
+								<a href="javascript:;" class="btn btn-sm" role="button" aria-label="버튼">버튼</a>
+							</div>
+						</div>
+						<div class="title-group">
+							<div class="flex flex-col">
+								<h5 class="tit-xs">타이틀 fs:16px lh:22px</h5>
+								<span class="sub-text">sub-text</span>
+							</div>
+							<div class="aside">
+								<button type="button" class="btn btn-sm" role="button" aria-label="버튼">버튼</button>
+								<a href="javascript:;" class="btn btn-sm" role="button" aria-label="버튼">버튼</a>
+							</div>
+						</div>
+					</div>
+<div class="code">
+<script type="text/plain" class="language-markup">
+<div class="title-group">
+	<div class="flex flex-col">
+		<h2 class="page-tit">타이틀</h2>
+		<span class="sub-text">sub-text</span>
+	</div>
+	<div class="aside">
+		<button type="button" class="btn btn-sm" role="button" aria-label="버튼">버튼</button>
+		<a href="javascript:;" class="btn btn-sm" role="button" aria-label="버튼">버튼</a>
+	</div>
+</div>
+</script>
+</div>
+				</div>
+
+				<div id="guide3" class="section">
+					<h3>Text</h3>
+
+				</div>
+
+				<div id="guide4" class="section">
+					<h3>Button</h3>
+
+				</div>
+
+				<div id="guide5" class="section">
+					<h3>Table</h3>
+
+				</div>
+
+				<div id="guide6" class="section">
+					<h3>Form</h3>
+
+				</div>
+
+				<div id="guide7" class="section">
+					<h3>Paging</h3>
+
+				</div>
+
+				<div id="guide8" class="section">
+					<h3>List</h3>
+
+				</div>
+
+				<div id="guide9" class="section">
+					<h3>Tab</h3>
+
+				</div>
+
+				<div id="guide10" class="section">
+					<h3>Accordion</h3>
+
+				</div>
+
+				<div id="guide11" class="section">
+					<h3>Slide</h3>
+
+				</div>
+
+				<div id="guide12" class="section">
+					<h3>Tooltip</h3>
+
+				</div>
+
+				<div id="guide13" class="section">
+					<h3>Popup</h3>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

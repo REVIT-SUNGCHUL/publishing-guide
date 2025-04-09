@@ -1,0 +1,74 @@
+/* font */
+@font-face {
+	font-family:'Spoqa';font-style:normal;font-weight:400;
+	src:url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
+    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+    unicode-range: U+0030-0039, U+002C;
+}
+@font-face {
+	font-family:'Spoqa';font-style:normal;font-weight:500;
+	src:url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype'),
+    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('/_pub/SBP/assets/css/fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2');
+    unicode-range: U+0030-0039, U+002C;
+}
+@font-face {
+	font-family:'Pretendard';
+    font-weight:400;
+    font-display: swap;
+	src:url('/_pub/SBP/assets/css/fonts/Pretendard-Regular.otf') format('opentype'),
+    url('/_pub/SBP/assets/css/fonts/Pretendard-Regular.woff') format('woff'),
+    url('/_pub/SBP/assets/css/fonts/Pretendard-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family:'Pretendard';
+    font-weight:500;
+    font-display: swap;
+	src:url('/_pub/SBP/assets/css/fonts/Pretendard-Medium.otf') format('opentype'),
+    url('/_pub/SBP/assets/css/fonts/Pretendard-Medium.woff') format('woff'),
+    url('/_pub/SBP/assets/css/fonts/Pretendard-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family:'Pretendard';
+    font-weight:600;
+    font-display: swap;
+	src:url('/_pub/SBP/assets/css/fonts/Pretendard-SemiBold.otf') format('opentype'),
+    url('/_pub/SBP/assets/css/fonts/Pretendard-SemiBold.woff') format('woff'),
+    url('/_pub/SBP/assets/css/fonts/Pretendard-SemiBold.woff2') format('woff2');
+}
+
+
+/* Reset */
+*,
+*:before,
+*:after{-webkit-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color:transparent !important;}
+
+:root{
+    font-size:10px;
+    --safe-b: calc(constant(safe-area-inset-bottom) / 2); /* iOS 11.x 이하 */
+    --safe-b: calc(env(safe-area-inset-bottom) / 2);   /* iOS 11.2 이상 */
+
+    /* color */
+    --fc-01: #000;
+    --fc-02: #1e1e1e;
+    --fc-03: #323232;
+    --fc-04: #636e8a;
+    --fc-05: #767676;
+    --fc-06: #6e6e6e;
+    --fc-07: #f0f6fd;
+    --fc-08: #ddd;
+    --fc-09: #ebebeb;
+    --fc-10: #f8f8f8;
+    --fc-11: #fff;
+
+    --bg-01: #fff;     /* Contents BG */
+    --bg-02: #f7f7f8;  /* Contents Notice */
+    --bdc-01: #ebeef0; /* Line Default */
+    --bdc-02: #696e76; /* Line Design Type */
+    --bdc-03: #c6cbd0; /* Data List Header */
+    --bdc-04: #484b51; /* Accordion Open Header */
+
+    --spoqa: 'SpoqaHanSansNeo';
+    --prtd: 'Pretendard';
+}
