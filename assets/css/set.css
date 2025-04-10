@@ -61,12 +61,13 @@
     --fc-09: #f8f8f8;
     --fc-10: #fff;
 
-    --bg-01: #fff;     /* Contents BG */
-    --bg-02: #f7f7f8;  /* Contents Notice */
-    --bdc-01: #ebeef0; /* Line Default */
-    --bdc-02: #696e76; /* Line Design Type */
-    --bdc-03: #c6cbd0; /* Data List Header */
-    --bdc-04: #484b51; /* Accordion Open Header */
+    --bg-01: #fff;
+    --bg-02: #f0f6fd;
+    --bg-03: #f7f7f8;
+    --bdc-01: #ebeef0;
+    --bdc-02: #696e76;
+    --bdc-03: #c6cbd0;
+    --bdc-04: #484b51;
 
     --spoqa: 'SpoqaHanSansNeo';
     --prtd: 'Pretendard';

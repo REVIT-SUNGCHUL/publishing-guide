@@ -482,9 +482,10 @@
 						</script>
 					</div>
 
-					<h3>link button</h3>
+					<h3>text button</h3>
 					<div class="preview">
-						<a href="javascript:;" class="btn btn-link">버튼</a>
+						<a href="javascript:;" class="btn btn-txt">버튼<i class="icon icon-arrow icon-20"></i></a>
+						<a href="javascript:;" class="btn btn-txt"><i class="icon icon-refresh icon-20"></i>새로고침</a>
 					</div>
 					<div class="code">
 						<div class="code-head">
@@ -495,12 +496,8 @@
 							</div>
 						</div>
 						<script type="text/plain" class="language-markup">
-<button type="button" class="btn btn-light">버튼(btn-light)<i class="icon icon-arrow"></i></button>
-<button type="button" class="btn btn-line">버튼(btn-line)<i class="icon icon-arrow02"></i></button>
-<button type="button" class="btn btn-line2"><i class="icon icon-refresh"></i>버튼(btn-line2)</button>
-<button type="button" class="btn btn-secondary"><i class="icon icon-refresh"></i>버튼(btn-secondary)</button>
-<button type="button" class="btn btn-primary">버튼(btn-primary)<i class="icon icon-arrow03"></i></button>
-<a href="#none" class="btn btn-primary" disabled>버튼(disabled)<i class="icon icon-arrow03"></i></a>
+<a href="javascript:;" class="btn btn-txt">버튼<i class="icon icon-arrow icon-20"></i></a>
+<a href="javascript:;" class="btn btn-txt"><i class="icon icon-refresh icon-20"></i>새로고침</a>
 						</script>
 					</div>
 
@@ -546,7 +543,93 @@
 
 				<div id="guide5" class="section">
 					<h3>Table</h3>
-					<div class="preview"></div>
+
+					<h4>List 테이블</h4>
+					<div class="preview">
+						<div class="table-wrap">
+							<div class="title-group items-end">
+								<div class="flex flex-col">
+									<h5 class="tit-xs">타이틀 fs:16px lh:22px</h5>
+									<span class="sub-text">sub-text</span>
+								</div>
+								<div class="aside">
+									<button type="button" class="btn btn-sm btn-light">버튼</button>
+									<a href="javascript:;" class="btn btn-sm btn-light" role="button">버튼</a>
+								</div>
+							</div>
+							<table>
+								<caption class="hidden">
+									<strong>OOO정보 내용</strong>
+									<p>번호, ID, 이름, 성별, 연락처, 이메일, 가입일자, 이용금액 정보를 제공</p>
+								</caption>
+								<colgroup>
+									<col width="60px">
+									<col width="100px">
+									<col width="100px">
+									<col width="60px">
+									<col width="120px">
+									<col width="120px">
+									<col width="120px">
+									<col width="120px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">No</th>
+										<th scope="col">ID</th>
+										<th scope="col">이름</th>
+										<th scope="col">성별</th>
+										<th scope="col">연락처</th>
+										<th scope="col">이메일</th>
+										<th scope="col">가입일자</th>
+										<th scope="col">이용금액</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th scope="col">합계</th>
+										<td class="txt-center"></td>
+										<td class="txt-center"></td>
+										<td class="txt-center"></td>
+										<td class="txt-center"></td>
+										<td class="txt-center"></td>
+										<td class="txt-center"></td>
+										<td class="txt-center"><span class="total">2,000,000원</span></td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td class="txt-center">2</td>
+										<td class="txt-center">qwer</td>
+										<td class="txt-center">홍길동</td>
+										<td class="txt-center">남</td>
+										<td class="txt-center">010-1234-5678</td>
+										<td class="txt-center">qwer@aaa.com</td>
+										<td class="txt-center">2025-04-01</td>
+										<td class="txt-right">1,000,000원</td>
+									</tr>
+									<tr>
+										<td class="txt-center">1</td>
+										<td class="txt-center">asdf</td>
+										<td class="txt-center">홍하나</td>
+										<td class="txt-center">여</td>
+										<td class="txt-center">010-9876-5432</td>
+										<td class="txt-center">asdf@aaa.com</td>
+										<td class="txt-center">2025-03-01</td>
+										<td class="txt-right">1,000,000원</td>
+									</tr>
+									<tr>
+										<td class="txt-center" colspan="8"><p class="noresult">조회된 데이터가 없습니다.</p></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="flex justify-end mt-12">
+								<div class="aside">
+									<button type="button" class="btn btn-sm btn-light">버튼</button>
+									<button type="button" class="btn btn-sm btn-light">버튼</button>
+								</div>
+							</div> 
+						</div>
+					</div>
 					<div class="code">
 						<div class="code-head">
 							<span>소스보기</span>
@@ -556,7 +639,186 @@
 							</div>
 						</div>
 						<script type="text/plain" class="language-markup">
+<div class="table-wrap">
+	<div class="title-group items-end">
+		<div class="flex flex-col">
+			<h5 class="tit-xs">타이틀 fs:16px lh:22px</h5>
+			<span class="sub-text">sub-text</span>
+		</div>
+		<div class="aside">
+			<button type="button" class="btn btn-sm btn-light">버튼</button>
+			<a href="javascript:;" class="btn btn-sm btn-light" role="button">버튼</a>
+		</div>
+	</div>
+	<table>
+		<caption class="hidden">
+			<strong>OOO정보 내용</strong>
+			<p>번호, ID, 이름, 성별, 연락처, 이메일, 가입일자, 이용금액 정보를 제공</p>
+		</caption>
+		<colgroup>
+			<col width="60px">
+			<col width="100px">
+			<col width="100px">
+			<col width="60px">
+			<col width="120px">
+			<col width="120px">
+			<col width="120px">
+			<col width="120px">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">No</th>
+				<th scope="col">ID</th>
+				<th scope="col">이름</th>
+				<th scope="col">성별</th>
+				<th scope="col">연락처</th>
+				<th scope="col">이메일</th>
+				<th scope="col">가입일자</th>
+				<th scope="col">이용금액</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th scope="col">합계</th>
+				<td class="txt-center"></td>
+				<td class="txt-center"></td>
+				<td class="txt-center"></td>
+				<td class="txt-center"></td>
+				<td class="txt-center"></td>
+				<td class="txt-center"></td>
+				<td class="txt-center"><span class="total">2,000,000원</span></td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td class="txt-center">2</td>
+				<td class="txt-center">qwer</td>
+				<td class="txt-center">홍길동</td>
+				<td class="txt-center">남</td>
+				<td class="txt-center">010-1234-5678</td>
+				<td class="txt-center">qwer@aaa.com</td>
+				<td class="txt-center">2025-04-01</td>
+				<td class="txt-right">1,000,000원</td>
+			</tr>
+			<tr>
+				<td class="txt-center">1</td>
+				<td class="txt-center">asdf</td>
+				<td class="txt-center">홍하나</td>
+				<td class="txt-center">여</td>
+				<td class="txt-center">010-9876-5432</td>
+				<td class="txt-center">asdf@aaa.com</td>
+				<td class="txt-center">2025-03-01</td>
+				<td class="txt-right">1,000,000원</td>
+			</tr>
+			<tr>
+				<td class="txt-center" colspan="8"><p class="noresult">조회된 데이터가 없습니다.</p></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="flex justify-end mt-12">
+		<div class="aside">
+			<button type="button" class="btn btn-sm btn-light">버튼</button>
+			<button type="button" class="btn btn-sm btn-light">버튼</button>
+		</div>
+	</div> 
+</div>
+						</script>
+					</div>
 
+					<h4>세로형 테이블</h4>
+					<div class="preview">
+						<div class="table-wrap">
+							<div class="flex items-center justify-between mb-12">
+								<span class="fs-s14 fc03">조회기간 : 2025.00.00 ~ 2025.00.00</span>
+								<div class="aside">
+									<button type="button" class="btn btn-sm btn-light">버튼</button>
+									<a href="javascript:;" class="btn btn-sm btn-light" role="button">버튼</a>
+								</div>
+							</div>
+							<table>
+								<caption class="hidden">
+									<strong>OOO조회 정보</strong>
+									<p>제목[제목, 제목, 제목] 정보를 제공</p>
+								</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="3">제목</th>
+										<th scope="row" class="line">제목</th>
+										<td class="txt-left">내용</td>
+									</tr>
+									<tr>
+										<th scope="row" class="line">제목</th>
+										<td class="txt-left">내용</td>
+									</tr>
+									<tr>
+										<th scope="row" class="line">제목</th>
+										<td class="txt-left">내용</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="flex justify-end mt-12">
+								<div class="aside">
+									<button type="button" class="btn btn-sm btn-light">버튼</button>
+									<button type="button" class="btn btn-sm btn-light">버튼</button>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="code">
+						<div class="code-head">
+							<span>소스보기</span>
+							<div class="aside">
+								<button type="button" class="copy-btn">Copy</button>
+								<button type="button" class="btn-toggle">열기</button>
+							</div>
+						</div>
+						<script type="text/plain" class="language-markup">
+<div class="table-wrap">
+	<div class="flex items-center justify-between mb-12">
+		<span class="fs-s14 fc03">조회기간 : 2025.00.00 ~ 2025.00.00</span>
+		<div class="aside">
+			<button type="button" class="btn btn-sm btn-light">버튼</button>
+			<a href="javascript:;" class="btn btn-sm btn-light" role="button">버튼</a>
+		</div>
+	</div>
+	<table>
+		<caption class="hidden">
+			<strong>OOO조회 정보</strong>
+			<p>제목[제목, 제목, 제목] 정보를 제공</p>
+		</caption>
+		<colgroup>
+			<col style="width:20%">
+			<col style="width:20%">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="3">제목</th>
+				<th scope="row" class="line">제목</th>
+				<td class="txt-left">내용</td>
+			</tr>
+			<tr>
+				<th scope="row" class="line">제목</th>
+				<td class="txt-left">내용</td>
+			</tr>
+			<tr>
+				<th scope="row" class="line">제목</th>
+				<td class="txt-left">내용</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="flex justify-end mt-12">
+		<div class="aside">
+			<button type="button" class="btn btn-sm btn-light">버튼</button>
+			<button type="button" class="btn btn-sm btn-light">버튼</button>
+		</div>
+	</div> 
+</div>
 						</script>
 					</div>
 				</div>
@@ -580,7 +842,26 @@
 
 				<div id="guide7" class="section">
 					<h3>Paging</h3>
-					<div class="preview"></div>
+					<div class="preview">
+						<div class="pagination">
+							<ul class="paging">
+								<li><a href="javascript:;" class="first" disabled><span class="hidden">처음 목록</span></a></li>
+								<li><a href="javascript:;" class="prev"><span class="hidden">이전 목록</span></a></li>
+								<li><a href="javascript:;" class="num on" title="선택됨" aria-title="현재 페이지">1</a></li>
+								<li><a href="javascript:;" class="num">2</a></li>
+								<li><a href="javascript:;" class="num">3</a></li>
+								<li><a href="javascript:;" class="num">4</a></li>
+								<li><a href="javascript:;" class="num">5</a></li>
+								<li><a href="javascript:;" class="num">6</a></li>
+								<li><a href="javascript:;" class="num">7</a></li>
+								<li><a href="javascript:;" class="num">8</a></li>
+								<li><a href="javascript:;" class="num">9</a></li>
+								<li><a href="javascript:;" class="num">10</a></li>
+								<li><a href="javascript:;" class="next"><span class="hidden">다음 목록</span></a></li>
+								<li><a href="javascript:;" class="end" disabled><span class="hidden">마지막 목록</span></a></li>
+							</ul>
+						</div>
+					</div>
 					<div class="code">
 						<div class="code-head">
 							<span>소스보기</span>
@@ -590,7 +871,24 @@
 							</div>
 						</div>
 						<script type="text/plain" class="language-markup">
-
+<div class="pagination">
+	<ul class="paging">
+		<li><a href="javascript:;" class="first" disabled><span class="hidden">처음 목록</span></a></li>
+		<li><a href="javascript:;" class="prev"><span class="hidden">이전 목록</span></a></li>
+		<li><a href="javascript:;" class="num on" title="선택됨" aria-title="현재 페이지">1</a></li>
+		<li><a href="javascript:;" class="num">2</a></li>
+		<li><a href="javascript:;" class="num">3</a></li>
+		<li><a href="javascript:;" class="num">4</a></li>
+		<li><a href="javascript:;" class="num">5</a></li>
+		<li><a href="javascript:;" class="num">6</a></li>
+		<li><a href="javascript:;" class="num">7</a></li>
+		<li><a href="javascript:;" class="num">8</a></li>
+		<li><a href="javascript:;" class="num">9</a></li>
+		<li><a href="javascript:;" class="num">10</a></li>
+		<li><a href="javascript:;" class="next"><span class="hidden">다음 목록</span></a></li>
+		<li><a href="javascript:;" class="end" disabled><span class="hidden">마지막 목록</span></a></li>
+	</ul>
+</div>
 						</script>
 					</div>
 				</div>

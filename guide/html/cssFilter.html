@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="title" content="REVIT">
+<script src="/guide/assets/js/cssFilter.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/guide/assets/css/guide.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+
+<title>Worksheet | Publishing Guide</title>
+<style>
+	.pixel {
+		display: inline-block;
+		background-color: #000;
+		width: 50px;
+		height: 50px;
+	}
+
+	.filterDetail {
+		font-family: "Consolas", "Menlo", "Ubuntu Mono", monospace;
+	}
+</style>
+</head>
+<body data-project="PC" data-util="document">
+	<div class="document" data-category="document">
+		<div id="gHeader">
+			<h1>REVIT</h1>
+			<div class="util-area">
+				<div class="tab-wrap">
+					<button type="button" class="btn-menu" role="button" aria-label="메뉴" aria-expanded="false">
+						<span class="bar" aria-hidden="true"></span>
+						<span class="bar" aria-hidden="true"></span>
+						<span class="bar" aria-hidden="true"></span>
+					</button>
+
+					<ul class="tab-list">
+						<li class="item"><a href="worksheet.html" role="tab" aria-selected="false">Web</a></li>
+						<li class="item"><a href="guide.html" role="tab" aria-selected="false">Guide</a></li>
+						<li class="item active"><a href="#none" role="tab" aria-selected="true">Doc</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="gContainer">
+			<div class="status-area">
+				<h2>CSS Filter Generator</h2>
+			</div>
+			<div class="g-contents">
+				<div class="table-wrap">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">Target color</th>
+								<td>
+									<input type="text" class="target" placeholder="target hex" value="#00a4d6">
+									<button type="button" class="btn btn-line2 execute">변환</button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">background-color</th>
+								<td class="txt-left"><div class="pixel realPixel"></div></td>
+							</tr>
+							<tr>
+								<th scope="row">filter</th>
+								<td class="txt-left"><div class="pixel filterPixel"></div></td>
+							</tr>
+							<tr>
+								<th scope="row">result</th>
+								<td class="txt-left">
+									<p class="filterDetail"></p>
+									<p class="lossDetail"></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
