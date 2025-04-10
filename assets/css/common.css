@@ -280,6 +280,24 @@ i[class^="icon"] {display:inline-block; vertical-align:middle; background-positi
 .pagination .paging li .num:hover:after,
 .pagination .paging li .num.on:after {content:''; position: absolute; left:0; right:0; bottom:0; height: 1px; background-color: #9653f7;}
 
+/* radio */
+.inp-rdochk .col input[type=radio] + .label {display:inline-block; position:relative; max-width:100%; min-height:1.8rem; padding-left: 2.4rem; line-height:1.8rem; color:#000; vertical-align:middle;cursor: pointer;}
+.inp-rdochk .col.alone input[type=radio] + .label {width:1.8rem; padding-left:0;}
+.inp-rdochk .col input[type=radio] + .label:before {content:''; display:inline-block; position:absolute; left: 0; top: 0;  z-index:1; width:1.8rem; height:1.8rem;  border:1px solid #888; vertical-align:middle; border-radius:100px;background-color:var(--bg-01);transition:0.3s}
+.inp-rdochk .col input[type=radio] + .label:after {content:''; display:inline-block; position:absolute; left: .4rem; top:.4rem; z-index:1; width:1rem; height:1rem; border-radius:50%; background:#9653f7; transform:scale(0)}
+.inp-rdochk .col input[type=radio]:checked + .label:before {border-color: #9653f7;}
+.inp-rdochk .col input[type=radio]:checked + .label:after {animation:radioAni .3s linear forwards}
+.inp-rdochk .col input[type=radio]:disabled + .label {color:#ababab;}
+.inp-rdochk .col input[type=radio]:disabled + .label:before {border-color:#a5a5a5; background-color: #f4f6f9;}
+.inp-rdochk .col input[type=radio]:checked:disabled + .label:before {border-color:#a5a5a5;background-color: #f4f6f9;}
+.inp-rdochk .col input[type=radio]:checked:disabled + .label:after {border-color:#a5a5a5;background-color: #a5a5a5;}
+.inp-rdochk .col input[type=radio]:focus + .label {outline:none}
+.inp-rdochk .col input[type=radio]:focus-visible + .label {outline:1px solid #000; outline-offset:2px;}
+@keyframes radioAni {
+    0% {transform:scale(0);}
+    60% {transform:scale(1.3);}
+    100% {transform:scale(1);}
+}
 
 /* loader */
 .load-screen {display:none; position: fixed; top:0; left:0; right:0; bottom:0; z-index:9999; display: flex; flex-direction: column; align-items: center; justify-content: center; background:rgba(255,255,255,0.75);}
