@@ -106,6 +106,8 @@ option[value=""][disabled] {display:none;}
 
 /* width */
 .w-20 {width:20%;}
+.w-25 {width:25%;}
+.w-33 {width:33.33%;}
 .w-40 {width:40%;}
 .w-45 {width:45%;}
 .w-50 {width:50%;}
@@ -281,9 +283,13 @@ i[class^="icon"] {display:inline-block; vertical-align:middle; background-positi
 .pagination .paging li .num.on:after {content:''; position: absolute; left:0; right:0; bottom:0; height: 1px; background-color: #9653f7;}
 
 /* form */
+.form-row {display: flex; width: 100%;}
 .form-row + .form-row {margin-top:2rem;}
-.form-col {display: flex; position: relative; min-height: 4.4rem; color: #26282c; font-weight: 400; font-size: 1.6rem; line-height: 4.4rem;}
+.form-row .space {flex:1; margin:0 1rem; line-height: 4rem;}
+.form-col {display: flex; position: relative; min-height: 4rem; color: #26282c; font-weight: 400; font-size: 1.6rem; line-height: 4rem;}
+.form-col + .form-col {margin-left:1rem;}
 .form-col .unit {margin-left:1rem;}
+.form-col .btn {flex:none; margin-left:1rem;}
 
 /* validation */
 .validation {margin:0.6rem 0; font-size:1.4rem;}
@@ -354,14 +360,14 @@ i[class^="icon"] {display:inline-block; vertical-align:middle; background-positi
 .switch input[checked]:disabled + label span {color:#707070;}
 
 /* select */
-.form-col .select {position:relative; width:100%; height:4.4rem; padding:0 4rem 0 1.6rem; border-radius:.6rem; border:1px solid #b4b4b4; color:var(--fc-02); font-size:1.6rem; line-height:4.4rem; font-weight: 500; background:#fff url(/assets/images/icon/icon-select_arrow.png) no-repeat right .5rem center/3rem 3rem;}
+.form-col .select {position:relative; width:100%; height:4rem; padding:0 4rem 0 1.6rem; border-radius:.6rem; border:1px solid #b4b4b4; color:var(--fc-02); font-size:1.6rem; line-height:4rem; font-weight: 500; background:#fff url(/assets/images/icon/icon-select_arrow.png) no-repeat right .5rem center/3rem 3rem; cursor:pointer;}
 .form-col .select:required option[value=""] {color:#000;}
 .form-col .select:disabled {background-color:#f6fafe;color:#707070;}
 .form-col .select option {padding:0.3rem 0;}
 .form-col.error .select {border:1px solid #e93543;}
 
 /* input */
-.form-col .inp {align-self:flex-start; position:relative; width:100%; height: 4.4rem; padding: 0 1.6rem; color:var(--fc-02); font-size:1.6rem; font-weight: 500; border-radius:.6rem; border: 1px solid #b4b4b4; background-color:#fff; text-align:left; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.form-col .inp {overflow:hidden; position:relative; align-self:flex-start; width:100%; height: 4rem; padding: 0 1.6rem; color:var(--fc-02); font-size:1.6rem; font-weight: 500; border-radius:.6rem; border: 1px solid #b4b4b4; background-color:#fff; text-align:left; white-space:nowrap; text-overflow:ellipsis;}
 .form-col .inp[readonly],
 .form-col .inp[disabled] {background-color: #f6fafe;}
 .form-col .inp.datepicker {padding:0 4rem 0 1.6rem;}
@@ -369,7 +375,7 @@ i[class^="icon"] {display:inline-block; vertical-align:middle; background-positi
 .form-col.error .unit {color:#e93543;}
 
 /* Textarea */
-.textarea-box {position:relative; display: flex; flex-direction: column;}
+.textarea-box {position:relative; display: flex; flex-direction: column; width:100%;}
 .textarea {position:relative; order:1; width:100%; min-height:12rem; padding:1rem; border-radius: .8rem; border:1px solid #b4b4b4;background-color: #fff;}
 .textarea:has(textarea:focus) {border-color:#9653f7;}
 .textarea.error {border-color:#e93543;}

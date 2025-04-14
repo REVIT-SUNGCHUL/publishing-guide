@@ -1448,6 +1448,159 @@
 </div>
 						</script>
 					</div>
+
+					<h4>조합</h4>
+					<div class="preview">
+						<div class="form-row">
+							<div class="form-col full">
+								<input type="text" class="inp" title="내용 입력">
+								<button type="button" class="btn btn-line2">확인</button>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-col w-20">
+								<select title="연락처 앞자리 선택" class="select" required="">
+									<option value="">선택하세요.</option>
+									<option value="0">010</option>
+									<option value="1">02</option>
+								</select>
+							</div>
+							<div class="form-col w-80">
+								<input type="tel" value="" maxlength="8" title="휴대폰번호" class="inp">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-col w-20">
+								<select title="연락처 앞자리 선택" class="select" required="">
+									<option value="">선택하세요.</option>
+									<option value="0">010</option>
+									<option value="1">02</option>
+								</select>
+							</div>
+							<div class="form-col w-40">
+								<input type="tel" value="" maxlength="4" title="휴대폰번호 중간자리" class="inp">
+							</div>
+							<div class="form-col w-40">
+								<input type="tel" value="" maxlength="4" title="휴대폰번호 끝자리" class="inp">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-col w-50" role="button" aria-label="주민등록번호 앞자리 입력" onclick="">
+								<input type="tel" maxlength="6" title="주민등록번호 앞자리" class="inp" readonly>
+							</div>
+							<span class="space">-</span>
+							<div class="form-col w-50" role="button" aria-label="주민등록번호 뒷자리 입력" onclick="">
+								<input type="password" maxlength="7" title="주민등록번호 뒷자리" class="inp" readonly>
+							</div>
+						</div>
+						<div class="form-row">
+							<span class="form-col full">
+								<input type="tel" maxlength="3" placeholder="3자리" title="사업자번호 첫번째 3자리" class="inp">
+								<span class="space">-</span>
+								<input type="tel" maxlength="2" placeholder="2자리" title="사업자번호 중간 2자리" class="inp">
+								<span class="space">-</span>
+								<input type="tel" maxlength="5" placeholder="5자리" title="사업자번호 마지막 5자리" class="inp"> 
+							</span>
+						</div>
+						<div class="form-row">
+							<div class="form-col w-50">
+								<input type="text" title="이메일 주소 입력" class="inp">
+							</div>
+							<span class="space">@</span>
+							<div class="form-col w-25">
+								<select title="이메일 도메인 선택" class="select" required="">
+									<option value="">선택하세요.</option>
+									<option value="0">직접입력</option>
+									<option value="naver">naver.com</option>
+									<option value="daum">daum.com</option>
+									<option value="google">google.com</option>
+								</select>
+							</div>
+							<div class="form-col w-25">
+								<input type="text" placeholder="직접입력" title="이메일 도메인 직접 입력" class="inp">
+							</div>
+						</div>
+					</div>
+					<div class="code">
+						<div class="code-head">
+							<span>소스보기</span>
+							<div class="aside">
+								<button type="button" class="copy-btn">Copy</button>
+								<button type="button" class="btn-toggle">열기</button>
+							</div>
+						</div>
+						<script type="text/plain" class="language-markup">
+<div class="form-row">
+	<div class="form-col full">
+		<input type="text" class="inp" title="내용 입력">
+		<button type="button" class="btn btn-line2">확인</button>
+	</div>
+</div>
+<div class="form-row">
+	<div class="form-col w-20">
+		<select title="연락처 앞자리 선택" class="select" required="">
+			<option value="">선택하세요.</option>
+			<option value="0">010</option>
+			<option value="1">02</option>
+		</select>
+	</div>
+	<div class="form-col w-80">
+		<input type="tel" value="" maxlength="8" title="휴대폰번호" class="inp">
+	</div>
+</div>
+<div class="form-row">
+	<div class="form-col w-20">
+		<select title="연락처 앞자리 선택" class="select" required="">
+			<option value="">선택하세요.</option>
+			<option value="0">010</option>
+			<option value="1">02</option>
+		</select>
+	</div>
+	<div class="form-col w-40">
+		<input type="tel" value="" maxlength="4" title="휴대폰번호 중간자리" class="inp">
+	</div>
+	<div class="form-col w-40">
+		<input type="tel" value="" maxlength="4" title="휴대폰번호 끝자리" class="inp">
+	</div>
+</div>
+<div class="form-row">
+	<div class="form-col w-50" role="button" aria-label="주민등록번호 앞자리 입력" onclick="">
+		<input type="tel" maxlength="6" title="주민등록번호 앞자리" class="inp" readonly>
+	</div>
+	<span class="space">-</span>
+	<div class="form-col w-50" role="button" aria-label="주민등록번호 뒷자리 입력" onclick="">
+		<input type="password" maxlength="7" title="주민등록번호 뒷자리" class="inp" readonly>
+	</div>
+</div>
+<div class="form-row">
+	<span class="form-col full">
+		<input type="tel" maxlength="3" placeholder="3자리" title="사업자번호 첫번째 3자리" class="inp">
+		<span class="space">-</span>
+		<input type="tel" maxlength="2" placeholder="2자리" title="사업자번호 중간 2자리" class="inp">
+		<span class="space">-</span>
+		<input type="tel" maxlength="5" placeholder="5자리" title="사업자번호 마지막 5자리" class="inp"> 
+	</span>
+</div>
+<div class="form-row">
+	<div class="form-col w-50">
+		<input type="text" title="이메일 주소 입력" class="inp">
+	</div>
+	<span class="space">@</span>
+	<div class="form-col w-25">
+		<select title="이메일 도메인 선택" class="select" required="">
+			<option value="">선택하세요.</option>
+			<option value="0">직접입력</option>
+			<option value="naver">naver.com</option>
+			<option value="daum">daum.com</option>
+			<option value="google">google.com</option>
+		</select>
+	</div>
+	<div class="form-col w-25">
+		<input type="text" placeholder="직접입력" title="이메일 도메인 직접 입력" class="inp">
+	</div>
+</div>
+						</script>
+					</div>
 				</div>
 
 				<div id="guide7" class="section">
